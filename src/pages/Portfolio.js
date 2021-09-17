@@ -151,15 +151,15 @@ export default class Portfolio extends Component {
               <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                   <ul class="navbar-nav mr-auto">
                       <li class="nav-item">
-                          <a class="nav-link" href="../">Home</a>
+                          <a class="nav-link" href="../home/#/">Home</a>
                       </li>
                       <li class="nav-item active">
-                          <a class="nav-link" href="./">Portfolio</a>
+                          <a class="nav-link" href="../home/#/portfolio">Portfolio</a>
                       </li>
                   </ul>
               </div>
               <div class="mx-auto order-0">
-                  <a class="navbar-brand mx-auto" href="#">Matthew Kanemy</a>
+                  <a class="navbar-brand mx-auto" href="../home/#/">Matthew Kanemy</a>
               </div>
               <div class="navbar-collapse collapse w-100 order-2 dual-collapse2">
                   <ul class="navbar-nav ml-auto">
