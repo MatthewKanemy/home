@@ -11,6 +11,7 @@ import visualizer from "../images/visualizer.png";
 import infobase from "../images/infobase.jpg"
 import donatr from "../images/donatr.png"
 import questionbank from "../images/questionbank.png"
+import verticalscope from "../images/verticalscope.png"
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import ReactPlayer from 'react-player';
@@ -64,6 +65,26 @@ export default class Portfolio extends Component {
             <Popup trigger={<Button variant="primary">View Demo</Button> } modal >
               <ReactPlayer url='https://youtu.be/92XJTfT1-pw' />
             </Popup>
+          </Card.Body>
+        </Card>
+      },
+      {
+        key: uuidv4(),
+        content: 
+        <Card style={{ width: '50vw' }}>
+          <Card.Img variant="top" src={verticalscope} />
+          <Card.Body>
+            <Card.Title>VerticalScope - Software Engineering Intern</Card.Title>
+            <Card.Text>
+              Developed features and resolved issues for a platform serving 1 billion weekly requests from 100 million monthly active users
+            </Card.Text>
+            <Card.Text>
+              Developed an automatic Jenkins environment cleanup system with fellow co-op students to save time and resources
+            </Card.Text>
+            <Card.Text>
+              Worked with PHP, JavaScript, Python, Jenkins, MySQL, Kubernetes throughout the term
+            </Card.Text>
+            <Button variant="primary" href="https://www.avsforum.com/">View Demo</Button>
           </Card.Body>
         </Card>
       },
@@ -184,9 +205,9 @@ export default class Portfolio extends Component {
 
             <div style={{
               width: '85vw',
-              height: '100vh', 
+              height: '93vh', 
               margin: '0 auto',
-              marginTop: '-7.5vh'
+              marginTop: '-3vh'
             }}>
                 <Carousel
                     slides={this.slides}

@@ -75,7 +75,7 @@ function Home() {
                 .typeString("Hi, I'm Matt!")
                 .pauseFor(1000)
                 .deleteAll()
-                .typeString("Welcome to my portfolio!")
+                .typeString("Welcome to my <a href='./#/portfolio'>portfolio!</a>")
                 .start();
               }}
 
