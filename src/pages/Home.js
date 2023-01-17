@@ -33,6 +33,9 @@ function Home() {
                       <li class="nav-item">
                           <a class="nav-link" href="../home/#/portfolio">Portfolio</a>
                       </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../home/#/resume">Resume</a>
+                      </li>
                   </ul>
               </div>
               <div class="mx-auto order-0">

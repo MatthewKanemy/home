@@ -16,6 +16,7 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import ReactPlayer from 'react-player';
 import { SocialIcon } from 'react-social-icons';
+import Descartes from "../images/descartes.png"
 import CS50x from '../images/CS50x.png';
 
 class Header extends Component {
@@ -55,16 +56,14 @@ export default class Portfolio extends Component {
         <Card style={{ width: '50vw' }}>
           <Card.Img variant="top" src={visualizer} />
           <Card.Body>
-            <Card.Title>Sorting Algorithm Visualizer</Card.Title>
+            <Card.Title>Algorithm Visualizer</Card.Title>
             <Card.Text>
-              Web application that allows you to browse through and view some famous sorting algorithms.
+              React web application that allows you to visualize various famous algorithms
             </Card.Text>
             <Card.Text>
-              Created using Python (Flask) for the backend and Javascript for the sorting algorithms and visualization.
+            Currently includes Sorting (Bubble, Selection, Insertion, Merge, Quick) and Path Finding (Dijkstras)
             </Card.Text>
-            <Popup trigger={<Button variant="primary">View Demo</Button> } modal >
-              <ReactPlayer url='https://youtu.be/92XJTfT1-pw' />
-            </Popup>
+            <Button variant="primary" href="https://devpost.com/software/infobase">Try it out</Button>
           </Card.Body>
         </Card>
       },
@@ -75,15 +74,10 @@ export default class Portfolio extends Component {
           <Card.Img variant="top" src={verticalscope} />
           <Card.Body>
             <Card.Title>VerticalScope - Software Engineering Intern</Card.Title>
-            <Card.Text>
-              Developed features and resolved issues for a platform serving 1 billion weekly requests from 100 million monthly active users
-            </Card.Text>
-            <Card.Text>
-              Developed an automatic Jenkins environment cleanup system with fellow co-op students to save time and resources
-            </Card.Text>
-            <Card.Text>
-              Worked with PHP, JavaScript, Python, Jenkins, MySQL, Kubernetes throughout the term
-            </Card.Text>
+            <Card.Text>Developed features and resolved issues for a platform serving 1 billion weekly requests from 100 million monthly active users</Card.Text>
+            <Card.Text>Developed a ’Guest Reply’ feature deployed on over 2000 sites that has boosted sign up rates by allowing guests of a forum to reply and sign up in one go</Card.Text>
+            <Card.Text>Developed an automatic environment cleanup system using Jenkins to save time and resources</Card.Text>
+            <Card.Text>Worked with PHP, JavaScript, Python, Jenkins, MySQL and Kubernetes throughout the term</Card.Text>
             <Button variant="primary" href="https://www.avsforum.com/">View Demo</Button>
           </Card.Body>
         </Card>
@@ -92,17 +86,15 @@ export default class Portfolio extends Component {
         key: uuidv4(),
         content: 
         <Card style={{ width: '50vw' }}>
-          <Card.Img variant="top" src={questionbank} />
+          <Card.Img variant="top" src={ Descartes } />
           <Card.Body>
-            <Card.Title>University of Waterloo - Online Learning Assistant</Card.Title>
-            <Card.Text>
-              Fully developed a Question Bank web application from scratch with 3 other co-op students which is currently being used by professors at the University of Waterloo to create and store questions/assessments.
-            </Card.Text>
-            <Card.Text>
-              Created using React on the frontend and Express for the backend, along with PostgreSQL.
-            </Card.Text>
-            <Popup trigger={<Button variant="primary">View Demo</Button> } modal>
-              <ReactPlayer url='https://youtu.be/YQUCUO5i510' />
+            <Card.Title>Descartes Systems Group</Card.Title>
+            <Card.Text>Developed features and resolved issues on a B2B Global Logistics Network connecting over 160 countries</Card.Text>
+            <Card.Text>Developed a Health Monitoring application that has decreased downtime by ensuring that all applications and their dependencies are healthy on all servers</Card.Text>
+            <Card.Text>Developed a favourites feature for the main homepage that has increased user satisfaction by allowing users to favourite applications so they are more accessible</Card.Text>
+            <Card.Text>Worked with Model-View-Controller in the .NET environment using C#, SQL, Razor and JavaScript</Card.Text>
+            <Popup trigger={<Button variant="primary">View Demo</Button> } modal >
+              <ReactPlayer url='https://youtu.be/92XJTfT1-pw' />
             </Popup>
           </Card.Body>
         </Card>
@@ -138,6 +130,21 @@ export default class Portfolio extends Component {
               Received first place in the humanitarianism track of Hack the World 2020!
             </Card.Text>
             <Button variant="primary" href="https://devpost.com/software/donatr">View Demo</Button>
+          </Card.Body>
+        </Card>
+      },
+      {
+        key: uuidv4(),
+        content: 
+        <Card style={{ width: '50vw' }}>
+          <Card.Img variant="top" src={questionbank} />
+          <Card.Body>
+            <Card.Title>University of Waterloo - Online Learning Assistant</Card.Title>
+            <Card.Text>Fully developed an Assessment Creation Web Application that is currently being used throughout the faculty of Mathematics to create and store LaTeX assessments</Card.Text>
+            <Card.Text>Worked with React, Node, Express, PostgreSQL, LaTeX and Git throughout the term</Card.Text>
+            <Popup trigger={<Button variant="primary">View Demo</Button> } modal>
+              <ReactPlayer url='https://youtu.be/YQUCUO5i510' />
+            </Popup>
           </Card.Body>
         </Card>
       }
@@ -176,6 +183,9 @@ export default class Portfolio extends Component {
                       </li>
                       <li class="nav-item active">
                           <a class="nav-link" href="../home/#/portfolio">Portfolio</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../home/#/resume">Resume</a>
                       </li>
                   </ul>
               </div>

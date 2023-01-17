@@ -18,3 +18,8 @@ html, body {
     }
 }
 
+#resume {
+    height: 85vh;
+    width: auto;
+    margin-top: 7.5vw;
+}
