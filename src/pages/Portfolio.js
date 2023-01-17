@@ -63,7 +63,7 @@ export default class Portfolio extends Component {
             <Card.Text>
             Currently includes Sorting (Bubble, Selection, Insertion, Merge, Quick) and Path Finding (Dijkstras)
             </Card.Text>
-            <Button variant="primary" href="https://devpost.com/software/infobase">Try it out</Button>
+            <Button variant="primary" href="https://63c6511079443078d49eacb5--gorgeous-custard-1f55cc.netlify.app/">Try it out</Button>
           </Card.Body>
         </Card>
       },
