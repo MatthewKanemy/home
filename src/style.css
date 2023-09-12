@@ -23,3 +23,7 @@ html, body {
     width: auto;
     margin-top: 7.5vw;
 }
+
+.buttonCode {
+    margin-left: 15px;
+}

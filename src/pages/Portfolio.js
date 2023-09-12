@@ -12,6 +12,8 @@ import infobase from "../images/infobase.jpg"
 import donatr from "../images/donatr.png"
 import questionbank from "../images/questionbank.png"
 import verticalscope from "../images/verticalscope.png"
+import fordPro from "../images/fordPro.png"
+import msai from "../images/msai.png"
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import ReactPlayer from 'react-player';
@@ -54,6 +56,21 @@ export default class Portfolio extends Component {
         key: uuidv4(),
         content: 
         <Card style={{ width: '50vw' }}>
+          <Card.Img variant="top" src={msai} />
+          <Card.Body>
+            <Card.Title>AI Stock Analyzer</Card.Title>
+            <Card.Text>Production Level Application utilizing AI and Chat GPT API to analyze recent news and give a real-time opinion on thousands of stocks</Card.Text>
+            <Card.Text>Developed using OpenAI API, React, Express and Heroku</Card.Text>
+            <Button variant="primary" href="https://my-stock-ai-frontend.vercel.app/">View Demo</Button>
+            <Button variant="primary" className="buttonCode" href="https://github.com/mkanemy/my-stock-ai-backend">Backend Code</Button>
+            <Button variant="primary" className="buttonCode" href="https://github.com/mkanemy/my-stock-ai-frontend">Frontend Code</Button>
+          </Card.Body>
+        </Card>
+      },
+      {
+        key: uuidv4(),
+        content: 
+        <Card style={{ width: '50vw' }}>
           <Card.Img variant="top" src={visualizer} />
           <Card.Body>
             <Card.Title>Algorithm Visualizer</Card.Title>
@@ -64,6 +81,7 @@ export default class Portfolio extends Component {
             Currently includes Sorting (Bubble, Selection, Insertion, Merge, Quick) and Path Finding (Dijkstras)
             </Card.Text>
             <Button variant="primary" href="https://master--gorgeous-custard-1f55cc.netlify.app/">Try it out</Button>
+            <Button variant="primary" className="buttonCode" href="https://github.com/mkanemy/Visualizer">Code</Button>
           </Card.Body>
         </Card>
       },
@@ -145,6 +163,20 @@ export default class Portfolio extends Component {
             <Popup trigger={<Button variant="primary">View Demo</Button> } modal>
               <ReactPlayer url='https://youtu.be/YQUCUO5i510' />
             </Popup>
+          </Card.Body>
+        </Card>
+      },
+      {
+        key: uuidv4(),
+        content: 
+        <Card style={{ width: '50vw' }}>
+          <Card.Img variant="top" src={fordPro} />
+          <Card.Body>
+            <Card.Title>Ford Motor Company - Software Developer</Card.Title>
+            <Card.Text>Developed Full Stack Business Tools used by vehicle dealers to manage and make large orders of vehicles</Card.Text>
+            <Card.Text>Developed a deployment pipeline utilizing GCP CloudRun that promotes deployment revisions and sends automatic messages to slack of which features have been deployed </Card.Text>
+            <Card.Text>Worked with Spring, React, Tekton, GCP, Akamai, Kubernetes, Docker, Shell and Postgres throughout the term</Card.Text>
+            <Button variant="primary" href="https://www.fordpro.com/en-us/">View Demo</Button>
           </Card.Body>
         </Card>
       }
