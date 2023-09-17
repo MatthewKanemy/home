@@ -50,7 +50,7 @@ return (
                         <SocialIcon url="https://www.linkedin.com/in/matthewkanemy/" style={{height: 35, width: 35}}/>
                     </li>
                     <li class="nav-item">
-                        <SocialIcon url="https://github.com/MatthewKanemy" bgColor="white" fgColor="rgb(51, 58, 64)" style={{height: 35, width: 35}}/>
+                        <SocialIcon url="https://github.com/mkanemy" bgColor="white" fgColor="rgb(51, 58, 64)" style={{height: 35, width: 35}}/>
                     </li>
                     <li class="nav-item">
                         <SocialIcon url="mailto:mkanemy@uwaterloo.ca" className="email" style={{height: 35, width: 35}}/>
